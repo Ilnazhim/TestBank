@@ -1,4 +1,4 @@
-package com.example.bank;
+package com.example.bank.model;
 
 import lombok.Data;
 import java.math.BigDecimal;
