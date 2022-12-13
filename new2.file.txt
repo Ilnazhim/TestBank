@@ -1,4 +1,8 @@
+ Добавляем локальному репозиторию ссылку на удаленный репозиторий github 
+ git remote add origin https://github.com/user/repo.git
  
+ Перед добавлением ветки нужно сделать коммит мастера
+ C:\Users\ilnazhim\Spring\Bank>git commit -m "else"
 
 C:\Users\ilnazhim\Spring\Bank>git checkout -
 Switched to branch 'master'
