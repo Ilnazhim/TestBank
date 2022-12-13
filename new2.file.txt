@@ -1,0 +1,56 @@
+ 
+
+C:\Users\ilnazhim\Spring\Bank>git checkout -
+Switched to branch 'master'
+
+
+C:\Users\ilnazhim\Spring\Bank>git branch
+* master
+  test
+
+C:\Users\ilnazhim\Spring\Bank>git branch new_branch
+
+C:\Users\ilnazhim\Spring\Bank>git branch
+* master
+  new_branch
+  test
+
+C:\Users\ilnazhim\Spring\Bank>git checkout new_branch
+Switched to branch 'new_branch'
+
+C:\Users\ilnazhim\Spring\Bank>git add .
+
+C:\Users\ilnazhim\Spring\Bank>git commit -m "commit change file to new branch"
+[new_branch ffe9adc] commit change file to new branch
+ 1 file changed, 1 insertion(+)
+
+C:\Users\ilnazhim\Spring\Bank>git push -u origin new_branch
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 284 bytes | 284.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'new_branch' on GitHub by visiting:
+remote:      https://github.com/Ilnazhim/TestBank/pull/new/new_branch
+remote:
+To https://github.com/Ilnazhim/TestBank.git
+ * [new branch]      new_branch -> new_branch
+branch 'new_branch' set up to track 'origin/new_branch'.
+
+C:\Users\ilnazhim\Spring\Bank>git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+C:\Users\ilnazhim\Spring\Bank>git merge new_branch
+Updating 2acc4ec..ffe9adc
+Fast-forward
+ new.file.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+C:\Users\ilnazhim\Spring\Bank>git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Ilnazhim/TestBank.git
+   2acc4ec..ffe9adc  master -> master
